@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaliza tu Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personaliza tu Café</h1>
+        <form id="coffeeForm">
+            <div class="form-group">
+                <label for="method">Método de Preparación:</label>
+                <select id="method" name="method">
+                    <option value="espresso">Espresso</option>
+                    <option value="pour-over">Pour-Over</option>
+                    <option value="french-press">Prensa Francesa</option>
+                    <option value="aeropress">Aeropress</option>
+                    <option value="cold-brew">Cold Brew</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="acidity">Acidez:</label>
+                <select id="acidity" name="acidity">
+                    <option value="low">Baja</option>
+                    <option value="medium">Media</option>
+                    <option value="high">Alta</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="body">Cuerpo:</label>
+                <select id="body" name="body">
+                    <option value="light">Ligero</option>
+                    <option value="medium">Medio</option>
+                    <option value="full">Completo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sweetness">Dulzura:</label>
+                <select id="sweetness" name="sweetness">
+                    <option value="low">Baja</option>
+                    <option value="medium">Media</option>
+                    <option value="high">Alta</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="intensity">Intensidad:</label>
+                <select id="intensity" name="intensity">
+                    <option value="mild">Suave</option>
+                    <option value="medium">Media</option>
+                    <option value="strong">Fuerte</option>
+                </select>
+            </div>
+            <button type="submit">Generar Receta</button>
+        </form>
+        <div id="recipe"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
