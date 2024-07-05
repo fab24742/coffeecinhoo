@@ -14,40 +14,40 @@ document.getElementById('coffeeForm').addEventListener('submit', function(event)
             grindSize = 'Muy Fino';
             waterTemp = '90-96°C';
             brewTime = '20-30 segundos';
-            coffeeAmount = '18-20g';
-            waterAmount = '36-40g';
+            coffeeAmount = 18;
+            waterAmount = 40;
             additionalInstructions = 'Presiona con fuerza (aproximadamente 30 libras) y asegúrate de que la presión del agua sea constante.';
             break;
         case 'pour-over':
             grindSize = 'Medio';
             waterTemp = '90-96°C';
             brewTime = '2-4 minutos';
-            coffeeAmount = '20g';
-            waterAmount = '300g';
+            coffeeAmount = 20;
+            waterAmount = 300;
             additionalInstructions = 'Vierte el agua en movimientos circulares y de manera constante para una extracción uniforme.';
             break;
         case 'french-press':
             grindSize = 'Grueso';
             waterTemp = '90-96°C';
             brewTime = '4 minutos';
-            coffeeAmount = '30g';
-            waterAmount = '500g';
+            coffeeAmount = 30;
+            waterAmount = 500;
             additionalInstructions = 'Después de verter el agua, revuelve suavemente y coloca la tapa sin presionar el émbolo hasta el final del tiempo de extracción.';
             break;
         case 'aeropress':
             grindSize = 'Medio a Fino';
             waterTemp = '85-92°C';
             brewTime = '1-2 minutos';
-            coffeeAmount = '17g';
-            waterAmount = '240g';
+            coffeeAmount = 17;
+            waterAmount = 240;
             additionalInstructions = 'Revuelve el café durante 10 segundos y luego presiona lentamente el émbolo.';
             break;
         case 'cold-brew':
             grindSize = 'Grueso';
             waterTemp = 'Ambiente o Fría';
             brewTime = '12-24 horas';
-            coffeeAmount = '100g';
-            waterAmount = '1000g';
+            coffeeAmount = 100;
+            waterAmount = 1000;
             additionalInstructions = 'Remoja el café en agua fría en el refrigerador. Filtra después del tiempo indicado.';
             break;
     }
