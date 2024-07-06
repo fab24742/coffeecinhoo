@@ -10,45 +10,52 @@
     <div class="container">
         <h1>Personaliza tu Café</h1>
         <form id="coffeeForm">
-            <label for="method">Método de Preparación:</label>
-            <select id="method" name="method">
+            <label for="metodo">Método de Preparación:</label>
+            <select id="metodo" name="metodo">
                 <option value="Espresso">Espresso</option>
-                <option value="Pour Over">Pour Over</option>
+                <option value="Aeropress">Aeropress</option>
                 <option value="French Press">French Press</option>
             </select>
-            
-            <label for="acidity">Acidez:</label>
-            <select id="acidity" name="acidity">
-                <option value="Baja">Baja</option>
-                <option value="Media">Media</option>
-                <option value="Alta">Alta</option>
+
+            <label for="acidez">Acidez:</label>
+            <select id="acidez" name="acidez">
+                <option value="1">Baja</option>
+                <option value="2">Media</option>
+                <option value="3">Alta</option>
+                <option value="4">Muy alta</option>
+                <option value="5">Extrema</option>
             </select>
 
-            <label for="body">Cuerpo:</label>
-            <select id="body" name="body">
-                <option value="Ligero">Ligero</option>
-                <option value="Medio">Medio</option>
-                <option value="Fuerte">Fuerte</option>
+            <label for="cuerpo">Cuerpo:</label>
+            <select id="cuerpo" name="cuerpo">
+                <option value="1">Ligero</option>
+                <option value="2">Medio</option>
+                <option value="3">Pesado</option>
+                <option value="4">Muy pesado</option>
+                <option value="5">Extremadamente pesado</option>
             </select>
 
-            <label for="sweetness">Dulzura:</label>
-            <select id="sweetness" name="sweetness">
-                <option value="Baja">Baja</option>
-                <option value="Media">Media</option>
-                <option value="Alta">Alta</option>
+            <label for="dulzura">Dulzura:</label>
+            <select id="dulzura" name="dulzura">
+                <option value="1">Baja</option>
+                <option value="2">Media</option>
+                <option value="3">Alta</option>
+                <option value="4">Muy alta</option>
+                <option value="5">Extremadamente alta</option>
             </select>
 
-            <label for="intensity">Intensidad:</label>
-            <select id="intensity" name="intensity">
-                <option value="Suave">Suave</option>
-                <option value="Media">Media</option>
-                <option value="Fuerte">Fuerte</option>
+            <label for="intensidad">Intensidad:</label>
+            <select id="intensidad" name="intensidad">
+                <option value="1">Suave</option>
+                <option value="2">Media</option>
+                <option value="3">Fuerte</option>
+                <option value="4">Muy fuerte</option>
+                <option value="5">Extremadamente fuerte</option>
             </select>
-            
-            <button type="button" onclick="generateRecipe()">Generar Receta</button>
+
+            <button type="button" onclick="generarReceta()">Generar Receta</button>
         </form>
-        
-        <div id="recipe" class="recipe"></div>
+        <div id="receta"></div>
     </div>
     <script src="script.js"></script>
 </body>
